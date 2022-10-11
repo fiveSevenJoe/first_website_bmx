@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.nav-container {
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+}
+
+.nav-contents {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  margin-left: 1rem;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: 1rem;
+  background-color: white;
+}
+
+#hamburger {
+  display: none;
+  margin-left: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  font-size: 25px;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.nav-list {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  color: yellow;
+  transition: ease-in-out 0.6s;
+}
+
+.nav-item:hover {
+  color: white;
+  padding: 4px;
+}
+
+header {
+  width: 100%;
+  border: 2px solid white;
+  color: white;
+  background-color: black;
+  text-align: center;
+  background-color: red;
+}
+
+.sale-text {
+  color: black;
+}
+
+.sec1 {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.hero {
+  width: 100%;
+  height: 500px;
+  z-index: -2;
+}
+
+.hero-text {
+  position: relative;
+}
+
+.htext1 {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 15rem;
+  color: black;
+  margin-left: 2rem;
+}
+
+.htext2 {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 18rem;
+  margin-left: 3rem;
+  color: yellow;
+}
+
+.sec2 {
+  background-color: black;
+  color: white;
+  margin-top: 4rem;
+  width: 100%;
+  padding: 3rem;
+}
+
+.meet-team {
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  padding: 30px;
+  text-indent: 2rem;
+  text-align: center;
+}
+.team-header {
+  line-height: 4rem;
+  text-align: center;
+  color: yellow;
+  text-decoration: underline;
+}
+
+.grid-team {
+  width: 400px;
+  margin-top: 3rem;
+  gap: 12px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.team {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.team:hover {
+  opacity: 0.3;
+}
+.sec3 {
+  background-color: black;
+  color: white;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.shop-head {
+  line-height: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  color: yellow;
+  text-decoration: underline;
+}
+
+.list1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 12px;
+  gap: 12px;
+  padding-top: 1rem;
+  list-style: none;
+  text-decoration: underline;
+}
+
+.grid-shop {
+  display: grid;
+  margin: 0 auto;
+  width: 600px;
+  height: 500px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.shipping {
+  text-align: center;
+  font-size: 12px;
+  line-height: 2rem;
+}
+
+.col {
+  color: red;
+}
+footer {
+  width: 100%;
+  height: 5rem;
+  margin-top: 2rem;
+  background-color: rgb(14, 17, 17);
+}
+
+.bike {
+  width: 610px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#bike {
+  grid-column: 1/4;
+}
+
+.bike:hover {
+  background-color: rgb(12, 15, 15);
+  opacity: 0.4;
+}
+
+.hood {
+  cursor: pointer;
+  height: 225px;
+  width: 200px;
+  transition: ease-in-out 0.3s;
+  z-index: -5;
+}
+
+#hood {
+  grid-row: 2/2;
+}
+
+.hood:hover {
+  background-color: red;
+  opacity: 0.4;
+}
+
+.shirt {
+  width: 200px;
+  height: 225px;
+  transition: ease-in-out 0.3s;
+}
+
+#shirt {
+  grid-row: 2/4;
+}
+
+.shirt:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.shoes {
+  width: 200px;
+  height: 225px;
+  transition: ease-in-out 0.3s;
+}
+
+#shoes {
+  grid-row: 2/6;
+  cursor: pointer;
+}
+
+.shoes:hover {
+  opacity: 0.4;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+.fa-instagram {
+  color: purple;
+  transition: 0.3s;
+}
+
+.fa-instagram:hover {
+  color: darkgreen;
+}
+
+.fa-twitter {
+  color: powderblue;
+  transition: 0.3s;
+}
+
+.fa-twitter:hover {
+  color: hotpink;
+}
+
+.fa-facebook {
+  color: blue;
+  transition: 0.3s;
+}
+
+.fa-facebook:hover {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+  }
+
+  .grid-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+
+  .team {
+    width: 200px;
+    height: 200px;
+  }
+
+  .bike {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hood {
+    width: 150px;
+    height: 120px;
+  }
+
+  .shirt {
+    width: 150px;
+    height: 120px;
+  }
+
+  .shoes {
+    width: 150px;
+    height: 120px;
+  }
+  .grid-shop {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shop-head {
+    margin-bottom: 2rem;
+  }
+
+  .shipping {
+    margin-bottom: 3rem;
+  }
+}
